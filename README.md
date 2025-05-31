@@ -22,7 +22,6 @@ Günümüzde internet ortamında hızla yayılan doğruluğu şüpheli haberleri
 | Transformers              | DistilBERT modeli için                        |
 | Datasets                  | Eğitim verilerinin hazırlanması               |
 | Scikit-learn              | Veri ayırımı ve metrik hesaplamaları          |
-| Gradio                    | Web arayüzü                                   |
 | BeautifulSoup             | URL'den metin çekimi                          |
 | Wikipedia API             | Alternatif açıklama kaynağı                   |
 | GoogleSearch-Python       | Güvenilir kaynaklardan arama yapılması        |
@@ -37,50 +36,6 @@ Günümüzde internet ortamında hızla yayılan doğruluğu şüpheli haberleri
 - **Doğruluk:** %95.5 (dengelenmiş test verisi)  
 - **Tokenizer ile birlikte kaydedildi**
 
----
-
-## 📁 Klasör Yapısı
-
-```
-
-fakeNewsDetector/
-├── distilBert\_model/          → Tahmin ve model dosyaları
-│   └── saved\_model/           → Eğitilmiş model + tokenizer
-├── explanation/               → Açıklama motoru ve cache
-│   └── fact\_checker.py
-├── FakeDetectAI/              → Web arayüzü (Gradio)
-├── data/                      → Temizlenmiş veri setleri
-│   ├── dataSet\_TR\_cleaned.csv
-│   └── dataSet\_EN\_cleaned.csv
-└── requirements.txt           → Gerekli kütüphaneler
-
-````
-
----
-
-## 🚀 Nasıl Çalıştırılır?
-
-### 1. Gerekli Kütüphaneleri Kurun
-```bash
-pip install -r requirements.txt
-````
-
-### 2. Terminal Üzerinden Tahmin Yapmak İçin
-
-```bash
-cd distilBert_model
-python predict.py
-```
-
-### 3. Web Arayüzünü Çalıştırmak İçin
-
-```bash
-cd FakeDetectAI
-python web.py
-```
-
----
-
 ## 🔎 Açıklama Sistemi Nasıl Çalışır?
 
 * Tahminin ardından sistem:
@@ -88,15 +43,6 @@ python web.py
   * Güvenilir kaynaklardan (*bbc.com, cnn.com, who.int, wikipedia.org*) haberle ilgili **destekleyici ya da çürütücü içerik** arar
   * İçerik bulunamazsa **Wikipedia özetini** döner
   * Sonuçta kullanıcıya **açıklama + kaynak linki** sunar
-
----
-
-## 📋 Geliştirme Durumu
-
-* ✅ Model eğitildi
-* ✅ Açıklama mekanizması geliştirildi
-* ✅ Web arayüzü çalışıyor
-* ✅ URL ve metin girişleri destekleniyor
 
 ---
 
