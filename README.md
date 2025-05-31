@@ -1,4 +1,4 @@
-# 📰 Fake News Detection – Sahte Haber Tespit Sistemi
+# 📰 Fake Information Detection – Sahte Bilgi Tespit Sistemi
 
 Bu proje, kullanıcıdan alınan **Türkçe veya İngilizce haber metinlerini** analiz ederek *doğruluğunu tahmin eden* ve neden o şekilde sınıflandırıldığını açıklayan bir yapay zeka sistemidir. Model, sahte haberle mücadele amacıyla geliştirilmiştir.
 
